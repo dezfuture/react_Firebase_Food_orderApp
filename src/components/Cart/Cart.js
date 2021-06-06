@@ -42,6 +42,8 @@ const Cart = (props) => {
     );
     setIsSubmitting(false);
     setDidSubmit(true);
+    // ab order place hone ke baad cart clear ho jayegi
+    cartCtx.clearCart();
   };
 
   const cartItems = (
