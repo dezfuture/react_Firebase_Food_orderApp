@@ -25,7 +25,7 @@ const AvailableMeals = () => {
 
       for (const key in responseData) {
         loadedMeals.push({
-          id: key,
+          id: key, //these are m1 and m2 which are the keys of different dishes in our firebase database
           name: responseData[key].name,
           description: responseData[key].description,
           price: responseData[key].price,
